@@ -10,8 +10,8 @@ msg = MIMEMultipart()
 msg['From'] = sender_email_id
 msg['To'] = ', ' .join(receiver_email_id)
 msg['Subject'] = subject
-body = "hi guys how are you. i am doing fine\n"
-body = body + "How was your task yesterday"
+body = "hi guys how are you.\n"
+body = body + "How was your yesterday going at work"
 msg.attach(MIMEText(body, 'plain'))
 
 text = msg.as_string()
